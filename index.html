@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavin Sabari Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:#020617;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#020617,#0f172a);
+}
+
+.hero h1{
+font-size:3rem;
+background:linear-gradient(90deg,#38bdf8,#a855f7);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:linear-gradient(90deg,#38bdf8,#a855f7);
+border-radius:8px;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+section{
+padding:70px 10%;
+text-align:center;
+}
+
+.container{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+width:280px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px #38bdf8;
+}
+
+details{
+margin-top:10px;
+background:#020617;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+padding:20px;
+text-align:center;
+background:#020617;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:2rem;}
+nav{flex-direction:column;align-items:center;}
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<h2>Kavin ⚡</h2>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section id="home" class="hero">
+<div>
+<h1>Kavin Sabari K</h1>
+<p>AIML Student | Tech Enthusiast | Gamer 🎮</p>
+<a href="#projects" class="btn">Explore Projects</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p><strong>Name:</strong> Kavin Sabari K</p>
+<p><strong>Age:</strong> 18</p>
+<p><strong>College:</strong> Bannari Amman Institute of Technology</p>
+<p><strong>Schooling:</strong> Sri Vinayaga Vidhayala School, Karamadai</p>
+<p><strong>10th Score:</strong> 86%</p>
+<p><strong>12th Score:</strong> 85.8%</p>
+<p>I am an Artificial Intelligence & Machine Learning student passionate about gaming, AI and futuristic technology.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="container">
+
+<div class="card">
+<h3>AI Chatbot</h3>
+<details>
+<summary>View Details</summary>
+<p>This project is a chatbot built using AI concepts and NLP techniques to simulate conversations.</p>
+</details>
+</div>
+
+<div class="card">
+<h3>Gaming Review App</h3>
+<details>
+<summary>View Details</summary>
+<p>A review platform for story-driven games like GTA V, God of War and The Last of Us.</p>
+</details>
+</div>
+
+<div class="card">
+<h3>Smart Portfolio</h3>
+<details>
+<summary>View Details</summary>
+<p>A responsive personal portfolio website built using only HTML and CSS.</p>
+</details>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Click below to send me an email directly.</p>
+<a href="mailto:yourmail@example.com" class="btn">Send Email</a>
+</section>
+
+<footer>
+<p>© 2026 Kavin Sabari K | AIML Portfolio</p>
+</footer>
+
+</body>
+</html>
